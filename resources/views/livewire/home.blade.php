@@ -137,7 +137,7 @@
             </div>
           </div>
           @empty
-          <h4 class="text-center">Untuk sementara belum tersedia...<h4>
+          <h5 class="font-italic">Untuk sementara konten ini belum tersedia...</h5>
           @endforelse
           
         </div>
@@ -172,7 +172,7 @@
             </div>
           </div>
           @empty
-          <h4>Untuk sementara belum tersedia...</h4>
+          <h5 class="font-italic">Untuk sementara konten ini belum tersedia...</h5>
             @endforelse
           
         </div>
