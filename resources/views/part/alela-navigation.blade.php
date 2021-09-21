@@ -11,7 +11,7 @@
             <div class="profile clearfix">
               
               <div class="profile_pic">
-               <img src="{{asset('images/default-user.png')}}" alt="" class="img-circle profile_img"> 
+               <img src="{{asset('images/avatar/default-user.png')}}" alt="" class="img-circle profile_img"> 
               </div>
               
               <div class="profile_info">

@@ -28,7 +28,7 @@
                     <div class="alert alert-success alert-dismissible " role="alert">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
                     </button>
-                    <strong>Untuk hasil yang optimal, dimensi gambar lebar x tinggi = 1920x1152 satuan pixel. </strong>
+                    <strong>Untuk hasil yang optimal, dimensi gambar lebar x tinggi = 1355x585 satuan pixel. </strong>
                     </div>
 
                     <div class="clearfix"></div>

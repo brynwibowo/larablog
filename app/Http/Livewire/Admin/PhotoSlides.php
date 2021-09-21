@@ -74,7 +74,7 @@ class PhotoSlides extends Component
             if($this->imageloc != '') //jika properti photo kosong maka kolom properti masih dengan value yang lama
             {
                 $this->validate([ //memvalidasi isi konten
-                    'imageloc'=>'required|image|mimes:jpeg,png,jpg|max:1024',
+                    'imageloc'=>'required|image|mimes:jpeg,png,jpg|max:1536',
                 ]);
                 $imageUpload = $this->imageloc->store('public'); //upload file ke storage jika properti photo ada
                 Storage::delete($this->oldPhoto);
@@ -82,7 +82,7 @@ class PhotoSlides extends Component
 
         }else{
             $this->validate([ //memvalidasi isi konten
-                'imageloc'=>'required|image|mimes:jpeg,png,jpg|max:1024',
+                'imageloc'=>'required|image|mimes:jpeg,png,jpg|max:1536',
             ]);
             $imageUpload = $this->imageloc->store('public');
         }
