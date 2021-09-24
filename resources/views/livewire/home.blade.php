@@ -67,37 +67,6 @@
 
   <main id="main">
 
-    <!-- ======= Featured Section ======= -->
-    <section id="featured" class="featured">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="icon-box">
-              <i class="icofont-computer"></i>
-              <h3><a href="">Lorem Ipsum</a></h3>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div>
-          </div>
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="icon-box">
-              <i class="icofont-image"></i>
-              <h3><a href="">Dolor Sitema</a></h3>
-              <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-            </div>
-          </div>
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="icon-box">
-              <i class="icofont-tasks-alt"></i>
-              <h3><a href="">Sed ut perspiciatis</a></h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Featured Section -->
-
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
       <div class="container" data-aos="fade-in">
@@ -132,7 +101,41 @@
                 <h5 class="card-title"><a href="/berita/{{$postz->slug}}">{{$postz->judul}}</a></h5>
                 <p class="card-text">{{Str::limit($postz->deskripsi, 100, $end='...')}}</p>
                 <p class="kaki">{{$datez}}, oleh {{$postz->name}}</p>
-                <div class="read-more"><a href="/berita/{{$postz->slug}}"><i class="icofont-arrow-right"></i> Lihat selengkapnya...</a></div>
+                <div class="read-more"><a href="/berita/{{$postz->slug}}"><i class="icofont-arrow-right"></i> Baca selengkapnya...</a></div>
+              </div>
+            </div>
+          </div>
+          @empty
+          <h5 class="font-italic">Untuk sementara konten ini belum tersedia...</h5>
+          @endforelse
+          
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features2" class="features">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+        <a href="{{route('santri-menulis')}}"><h2>Santri Menulis</h2></a>
+          <p>Karya tulis santri Pondok Pesantren Nurul Ummah Kebumen</p>
+        </div>
+
+        <div class="row">
+          @forelse($santrim as $santri)
+              <?php
+                  $s_img = array_pad(explode('/', $santri->photo), 2, null);
+                  $s_date = date("d M Y",strtotime($santri->published_at));
+                ?>
+          <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up">
+            <div class="card" style="background-image: url(/storage/{{$s_img[1]}});">
+              <div class="card-body">
+                <h5 class="card-title"><a href="/santri-menulis/{{$santri->slug}}">{{$santri->judul}}</a></h5>
+                <p class="card-text">{{Str::limit($santri->deskripsi, 100, $end='...')}}</p>
+                <p class="kaki">{{$s_date}}, oleh {{$santri->name}}</p>
+                <div class="read-more"><a href="/santri-menulis/{{$santri->slug}}"><i class="icofont-arrow-right"></i> Baca selengkapnya...</a></div>
               </div>
             </div>
           </div>

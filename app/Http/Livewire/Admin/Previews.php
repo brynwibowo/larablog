@@ -78,7 +78,7 @@ class Previews extends Component
         {
         return view('admin.preview',['konten' => $konten, 'santri_' => $santri_])->layout('layouts.home');
         }else{
-            return view('404')->layout('layouts.alela-basic');
+            return view('404')->layout('layouts.basic');
         }
     }
 }

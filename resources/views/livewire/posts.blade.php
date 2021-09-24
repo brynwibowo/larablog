@@ -61,7 +61,7 @@
                 </div>
 
                 <div class="float-right share">
-                  <a href="#" title="Share on Twitter"><i class="icofont-twitter"></i></a>
+                  <a href="https://twitter.com/intent/tweet?text={{$judul}}&url={{route('berita')}}/{{$slug}}" target="__blank" title="Share on Twitter"><i class="icofont-twitter"></i></a>
                   <a href="#" title="Share on Facebook"><i class="icofont-facebook"></i></a>
                   <a href="#" title="Share on Instagram"><i class="icofont-instagram"></i></a>
                 </div>

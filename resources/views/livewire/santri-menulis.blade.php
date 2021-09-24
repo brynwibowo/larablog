@@ -13,7 +13,7 @@
         <div class="container">
           <div class="breadcrumb-hero">
             <h2>Santri Menulis</h2>
-            <p>Tulisan ini adalah hasil karya santri-santri Pondok Pesantren Nurul Ummah Kebumen</p>
+            <p>Karya tulis santri Pondok Pesantren Nurul Ummah Kebumen</p>
           </div>
         </div>
       </div>

@@ -11,6 +11,7 @@ use Auth;
 class Users extends Component
 {
     use WithPagination; //harus disertakan jika menggunakan paginasi
+    protected $paginationTheme = 'bootstrap';
     //properti
     public $ids;
     public $name;
@@ -216,7 +217,7 @@ class Users extends Component
         $users = User::select('id','name','email','level') //memanggil data
             ->whereNotIn('level',['admin']) //pengguna level admin tidak ditampilkan
             ->orderBy('id','DESC')->paginate(10); //paginasi tiap 10 data
-        if ($this->search !== null) {
+        if ($this->search != '') {
             //akan dieksekusi jika koolom pencarian terisi
             $users = User::select('id','name','email','level')
             ->whereNotIn('level',['admin'])

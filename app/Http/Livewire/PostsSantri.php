@@ -9,6 +9,7 @@ use Livewire\WithPagination;
 class PostsSantri extends Component
 {
     use WithPagination;
+    protected $paginationTheme = 'bootstrap';
     public $ids;
     public $judul;
     public $deskripsi;

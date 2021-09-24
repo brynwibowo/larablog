@@ -16,25 +16,25 @@
           </div>
           <!--
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Fasilitas di Nurul Ummah Kebumen</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"></a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"></a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"></a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"></a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"></a></li>
             </ul>
           </div>
           -->
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Kontak Kami</h4>
             <p>
-              Jl. Raya Ijo-Jatijajar, Kaliputri<br>
-              Mangunweni, Ayah<br>
+              Jl. Kaliputri KM.01 Mangunweni<br>
+              Kecamatan Ayah<br>
               Kabupaten Kebumen<br>
               Jawa Tengah 54473<br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              <strong>Phone:</strong> <br>
+              <strong>Email:</strong> @gmail.com<br>
             </p>
 
           </div>
@@ -59,10 +59,7 @@
         &copy; {{date('Y')}} Copyright <strong><span>Ponpes Nurul Ummah</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/ -->
         Designed by <a href="https://bootstrapmade.com/" target="__blank">BootstrapMade</a>
       </div>
     </div>

@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
 
   <title>@yield('title')</title>
   <meta content="Pondok Pesantren Nurul Ummah Kebumen - @yield('title')" name="description">
@@ -42,7 +43,7 @@
   <section id="topbar" class="d-none d-lg-block">
     <div class="container d-flex">
       <div class="contact-info mr-auto">
-        <i class="icofont-envelope"></i><a href="#">contact@example.com</a>
+        <i class="icofont-envelope"></i><a href="mailto:contact@example.com">contact@example.com</a>
         <i class="icofont-phone"></i> <a href="#">+1 5589 55488 55</a>
       </div>
       <div class="social-links">

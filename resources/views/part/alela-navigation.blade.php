@@ -45,6 +45,8 @@
                 </li>
                   <li><a href="{{route('content-photo-slide')}}"><i class="fa fa-file-image-o"></i> Foto Slide</a>
                     </li>
+                    <li><a href="{{route('message')}}"><i class="fa fa-envelope"></i> Messages</a>
+                  </li>
                     @endif
                 </ul>
               </div>

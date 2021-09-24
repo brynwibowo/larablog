@@ -11,12 +11,12 @@
             <h2>{{$judul}}</h2>
             @if(Auth::user()->level == 'admin')
                 @if(!$published)
-                <button type="button" class="btn btn-primary" style="font-weight: bold;" wire:click="publikasi({{$ids}})">Publikasi Sekarang</button>
+                <button type="button" class="btn btn-success" style="font-weight: bold;" wire:click="publikasi({{$ids}})">Publikasi Sekarang</button>
                 @else
                 <button type="button" class="btn btn-light" style="font-weight: bold;">Sudah Dipublikasi</button>
                 @endif
                 @else
-                <button type="button" class="btn btn-warning" style="font-weight: bold;">INI HANYALAH PREVIEW, TIDAK AKAN DITAMPILKAN DI PUBLIK</button>
+                <button type="button" class="btn btn-light" style="font-weight: bold;">INI HANYALAH PREVIEW, TIDAK DITAMPILKAN DI PUBLIK</button>
               @endif
             <p></p>
           </div>

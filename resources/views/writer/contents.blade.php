@@ -79,8 +79,10 @@
                         if($row->is_published)
                         {
                           $status = 'Publikasi';
+                          $cls="text-success";
                         }else{
                           $status = 'Draft';
+                          $cls="text-danger";
                         }
                     ?>
                         <tr>
@@ -89,7 +91,7 @@
                           <td>{{ $row->judul }}</td>
                           <td>{{ $row->name }}</td>
                           <td>{{ $row->views }}</td>
-                          <td>{{ $status }}</td>
+                          <td class="{{$cls}}"><b>{{ $status }}</b></td>
                           <td>
                           <div class="btn-group">
                             <button type="button" class="btn" data-toggle="dropdown"

@@ -38,10 +38,16 @@ class Home extends Component
                 ->whereNotIn('contents.kategori',$this->protectKategori)
                 ->where('contents.is_published','=',true)
                 ->orderBy('contents.id','DESC')->paginate(6);
+        $santrim = Content::leftJoin('users','users.id','=','contents.author')
+                ->select('contents.judul','contents.photo','contents.deskripsi','contents.slug','users.name','contents.published_at')
+                ->where('contents.kategori',"#Santri")
+                ->where('contents.is_published','=',true)
+                ->orderBy('contents.id','DESC')->paginate(6);
         return view('livewire.home',[
             'photoslide'=> $photos,
             'albums' => $albums,
             'beritaz' => $beritaz,
+            'santrim' => $santrim,
             ]) //memanggil view untuk ditampilkan
            ->layout('layouts.home'); //layout view yang digunakan 
 

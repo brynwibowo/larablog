@@ -9,6 +9,7 @@ use Livewire\WithPagination;
 class Posts extends Component
 {
     use WithPagination;
+    protected $paginationTheme = 'bootstrap';
     public $ids;
     public $judul;
     public $deskripsi;
@@ -41,6 +42,7 @@ class Posts extends Component
         $time = strtotime($post->published_at);
         $this->date = date("d-M-Y",$time);
         $this->status = true;
+        $this->slug = $post->slug;
         }else{
             $this->status = false;
         }
