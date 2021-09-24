@@ -23,6 +23,7 @@ class Contacts extends Component
     public $page=1;
     public $kategoriOps="name";
     public $urutan = "DESC";
+    public $read_status="";
 
     //fungsi untuk paginasi
     protected $queryString = [
@@ -80,6 +81,11 @@ class Contacts extends Component
         $this->email = $msg->email;
         $this->subject = $msg->subject;
         $this->text = $msg->message;
+
+        $verifiedData = [
+            'is_readed' => true,
+        ];
+        Contact::find($ids)->update($verifiedData);
         
         //membuka page form konten
         $this->emit('showModalDetail');
@@ -90,10 +96,17 @@ class Contacts extends Component
         if(Auth::user()->level == 'admin')
        {  
            //akan dieksekusi jika level pengguna admin
-        $msg = Contact::select('id','name','email','subject','created_at')->orderBy('id',$this->urutan)->paginate(10); //paginasi tiap 10 data
+        if($this->read_status == ""){
+        $msg = Contact::select('id','name','email','subject','is_readed','created_at')
+                ->orderBy('id',$this->urutan)->paginate(10); //paginasi tiap 10 data
+        }else{
+            $msg = Contact::select('id','name','email','subject','is_readed','created_at')
+                ->where('is_readed',$this->read_status)
+                ->orderBy('id',$this->urutan)->paginate(10); //paginasi tiap 10 data
+        }
         if ($this->search != '') {
             //akan dieksekusi jika koolom pencarian terisi
-            $msg = Contact::select('id','name','email','subject','created_at')
+            $msg = Contact::select('id','name','email','subject','is_readed','created_at')
                             ->where($this->kategoriOps, 'like', '%' . $this->search . '%') //pencarian berdasarkan kata kunci dan kategori
                             ->latest()
                             ->paginate(10); //paginasi setiap 10 data

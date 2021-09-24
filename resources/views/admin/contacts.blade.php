@@ -26,6 +26,13 @@
            <div class="col-md-12 col-sm-12 ">
                 <div class="x_panel">
                   <div class="x_title">
+                  <ul class="nav navbar-right panel_toolbox ml-2">
+                        <select class="form-control" wire:model="read_status">
+                        <option value="" selected>tampilkan semua</option>
+                        <option value=0>tampilkan belum dibaca</option>
+                        <option value=1>tampilkan sudah dibaca</option>
+                        </select>
+                    </ul>
                     
                     <ul class="nav navbar-right panel_toolbox">
                         <select class="form-control" wire:model="urutan">
@@ -48,6 +55,7 @@
                           <th>Nama</th>
                           <th>Email</th>
                           <th>Subject</th>
+                          <th>Status</th>
                           <th>Action</th>
                         </tr>
                       </thead>
@@ -56,9 +64,15 @@
                       @forelse($messages as $row)
                     <?php
                         //convert time stamp to D M Y
-                        
                         $time = strtotime($row->created_at);
                         $date = date("d M Y, H:i",$time);
+                        if($row->is_readed){
+                          $stts = "sudah dibaca";
+                          $cls = "font-italic";
+                        }else{
+                          $stts = "belum dibaca";
+                          $cls = "font-weight-bold";
+                        }
                         
                     ?>
                         <tr>
@@ -67,6 +81,7 @@
                           <td>{{ $row->name }}</td>
                           <td><a href="mailto:{{$row->email}}" target="__blank">{{ $row->email }}</a></td>
                           <td>{{ $row->subject }}</td>
+                          <td><span class="{{$cls}}">{{$stts}}</span></td>
                           <td>
                           <div class="btn-group">
                             <button type="button" class="btn" data-toggle="dropdown"
@@ -83,7 +98,7 @@
                         </tr>
                         @empty
                         <tr>
-                            <td colspan="6">Belum ada pesan...</td>
+                            <td colspan="7">Belum ada pesan...</td>
                         </tr>
                     @endforelse
                       </tbody>
