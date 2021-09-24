@@ -13,6 +13,7 @@ class Kontak extends Component
     public $text;
     public $status='';
     public $agreement=0;
+    public $cls;
 
     public function resetInputFields(){
         $this->name = '';
@@ -23,6 +24,7 @@ class Kontak extends Component
     }
 
     public function store(){
+        $this->status='';
         $this->validate([ //memvalidasi isi konten
             'name'=>'required',
             'email'=>'required|email',
@@ -40,9 +42,11 @@ class Kontak extends Component
 
         Contact::create($verifiedData);
         $this->status = "Pesan berhasil terkirim!";
+        $this->cls = "text-success";
         $this->resetInputFields();
         }else{
             $this->status = "Klik saya setuju";
+            $this->cls = "text-danger";
         }
     }
     public function render()

@@ -82,16 +82,17 @@
                 <textarea class="form-control" maxlength=255 wire:model="text" rows="5" placeholder="Message"></textarea>
                 @error('text') <span class="text-danger font-italic">{{ $message }}</span>@enderror
               </div>
-              <div class="mb-3">
-								<label>
-									<input type="checkbox" wire:model="agreement" value=1> Saya setuju
-								</label>
+              <div class="form-check">
+									<input type="checkbox" wire:model="agreement" id="agreement" class="form-check-input" value=1> 
+                  <label class="form-check-label" for="agreement">
+                  Saya setuju
+                  </label>
 							</div>
               <div class="mb-3">
               <div wire:loading wire:target="store" class="text-primary">
                   Mengirim...
                </div>
-               <span class="font-italic">{{$status}}</span>
+               <span class="font-italic {{$cls}}">{{$status}}</span>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
