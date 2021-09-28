@@ -114,30 +114,50 @@
       </div>
     </section><!-- End Features Section -->
 
-    <!-- ======= Features Section ======= -->
-    <section id="features2" class="features">
-      <div class="container">
 
-        <div class="section-title" data-aos="fade-up">
+    <!-- ======= Blog Section ======= -->
+    <section id="blog2" class="blog2">
+      <div class="container">
+      <div class="section-title" data-aos="fade-up">
         <a href="{{route('santri-menulis')}}"><h2>Santri Menulis</h2></a>
           <p>Karya tulis santri Pondok Pesantren Nurul Ummah Kebumen</p>
-        </div>
+       </div>
 
         <div class="row">
-          @forelse($santrim as $santri)
+            @forelse($santrim as $santri)
               <?php
                   $s_img = array_pad(explode('/', $santri->photo), 2, null);
                   $s_date = date("d M Y",strtotime($santri->published_at));
                 ?>
-          <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up">
-            <div class="card" style="background-image: url(/storage/{{$s_img[1]}});">
-              <div class="card-body">
-                <h5 class="card-title"><a href="/santri-menulis/{{$santri->slug}}">{{$santri->judul}}</a></h5>
-                <p class="card-text">{{Str::limit($santri->deskripsi, 100, $end='...')}}</p>
-                <p class="kaki">{{$s_date}}, oleh {{$santri->name}}</p>
-                <div class="read-more"><a href="/santri-menulis/{{$santri->slug}}"><i class="icofont-arrow-right"></i> Baca selengkapnya...</a></div>
+
+          <div class="col-lg-4  col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <article class="entry">
+
+              <div class="entry-img">
+                <img src="/storage/{{$s_img[1]}}" alt="" class="img-fluid">
               </div>
-            </div>
+
+              <h2 class="entry-title">
+                <a href="/santri-menulis/{{$santri->slug}}">{{$santri->judul}}</a>
+              </h2>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="icofont-user"></i>{{$santri->name}}</li>
+                  <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i><time datetime="2020-01-01">{{$s_date}}</time></li>
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                <p>
+                {{Str::limit($santri->deskripsi, 100, $end='...')}}
+                </p>
+                <div class="read-more">
+                  <a href="/santri-menulis/{{$santri->slug}}">Baca selengkapnya</a>
+                </div>
+              </div>
+
+            </article><!-- End blog entry -->
           </div>
           @empty
           <h5 class="font-italic">Untuk sementara konten ini belum tersedia...</h5>
@@ -146,7 +166,8 @@
         </div>
 
       </div>
-    </section><!-- End Features Section -->
+    </section><!-- End Blog Section -->
+
 
     <!-- ======= Gallery Section ======= -->
     <section id="portfolio" class="portfolio">
