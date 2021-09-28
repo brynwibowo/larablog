@@ -8,6 +8,7 @@ use App\Http\Livewire\Admin\PhotoSlides;
 use App\Http\Livewire\Admin\Profile;
 use App\Http\Livewire\Admin\Previews;
 use App\Http\Livewire\Admin\Contacts;
+use App\Http\Livewire\Admin\ProfilPersonal;
 use App\Http\Livewire\Berita;
 use App\Http\Livewire\Kontak;
 use App\Http\Livewire\SantriMenulis;
@@ -54,6 +55,7 @@ Route::group(['middleware' => 'admin'], function() {
     Route::get('content/gallery', Galleries::class)->name('content-gallery');
     Route::get('content/profil', Profile::class)->name('content-profil');
     Route::get('content/photoslide', PhotoSlides::class)->name('content-photo-slide');
+    Route::get('content/profil-personal', ProfilPersonal::class)->name('profil-personal');
     Route::get('message', Contacts::class)->name('message');
 });
 
