@@ -4,9 +4,13 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use App\Models\Contact;
+use Lukeraymonddowning\Honey\Traits\WithHoney;
+use Lukeraymonddowning\Honey\Traits\WithRecaptcha;
 
 class Kontak extends Component
 {
+    use WithHoney;
+    use WithRecaptcha;
     public $name;
     public $email;
     public $subject;
@@ -31,23 +35,31 @@ class Kontak extends Component
             'subject'=>'required',
             'text'=>'required',
         ]);
+        
         if($this->agreement)
         {
-        $verifiedData = [
-            'name'=>$this->name,
-            'email'=> $this->email,
-            'subject'=>$this->subject,
-            'message'=> $this->text,
-        ];
+            if($this->honeyPasses())
+            {      
+                $verifiedData = [
+                    'name'=>$this->name,
+                    'email'=> $this->email,
+                    'subject'=>$this->subject,
+                    'message'=> $this->text,
+                ];
 
-        Contact::create($verifiedData);
-        $this->status = "Pesan berhasil terkirim!";
-        $this->cls = "text-success";
-        $this->resetInputFields();
+                Contact::create($verifiedData);
+                $this->status = "Pesan berhasil terkirim!";
+                $this->cls = "text-success";
+                $this->resetInputFields();
+            }else{
+                $this->status = "Sistem mendeteksi aktifitas anda tidak wajar";
+                $this->cls = "text-danger";
+            }
         }else{
             $this->status = "Klik saya setuju";
             $this->cls = "text-danger";
         }
+        
     }
     public function render()
     {
