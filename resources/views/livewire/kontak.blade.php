@@ -82,6 +82,7 @@
                 <textarea class="form-control" maxlength=255 wire:model="text" rows="5" placeholder="Message"></textarea>
                 @error('text') <span class="text-danger font-italic">{{ $message }}</span>@enderror
               </div>
+              <x-honey recaptcha/>
               <div class="form-check">
 									<input type="checkbox" wire:model="agreement" id="agreement" class="form-check-input" value=1> 
                   <label class="form-check-label" for="agreement">
