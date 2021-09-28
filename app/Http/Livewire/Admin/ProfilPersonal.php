@@ -5,6 +5,8 @@ namespace App\Http\Livewire\Admin;
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Profil;
+use App\Exports\PersonalExport;
+use Maatwebsite\Excel\Facades\Excel;
 use Auth;
 
 class ProfilPersonal extends Component
@@ -167,4 +169,9 @@ class ProfilPersonal extends Component
 
         }
     }
+
+    public function export_excel()
+	{
+		return Excel::download(new PersonalExport, 'data-personal_'.date("d-m-Y").'.xlsx');
+	}
 }

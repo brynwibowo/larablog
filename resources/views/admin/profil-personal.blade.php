@@ -27,6 +27,9 @@
                     <button type="button" wire:click="create()" class="btn btn-round btn-primary">
                       <i class="fa fa-plus"></i> Tambah
                     </button>
+                    <button type="button" wire:click="export_excel()" class="btn btn-round btn-success">
+                      <i class="fa fa-file-excel-o"></i> Export
+                    </button>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
