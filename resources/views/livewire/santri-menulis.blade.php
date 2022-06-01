@@ -1,5 +1,5 @@
 @section('title')
-{{__('Santri Menulis - PP Nurul Ummah Kebumen')}}
+{{__('Santri Menulis - Your Organization')}}
 @endsection
 @section('santri-active')
 {{__('active')}}
@@ -13,7 +13,7 @@
         <div class="container">
           <div class="breadcrumb-hero">
             <h2>Santri Menulis</h2>
-            <p>Karya tulis santri Pondok Pesantren Nurul Ummah Kebumen</p>
+            <p>vitae ultricies leo integer malesuada nunc vel risus commodo viverra</p>
           </div>
         </div>
       </div>

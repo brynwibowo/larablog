@@ -1,5 +1,5 @@
 @section('title')
-{{__('Berita - PP Nurul Ummah Kebumen')}}
+{{__('Berita - Your Website')}}
 @endsection
 @section('berita-active')
 {{__('active')}}
@@ -13,7 +13,7 @@
         <div class="container">
           <div class="breadcrumb-hero">
             <h2>Berita</h2>
-            <p>Informasi dan kegiatan Pondok Pesantren Nurul Ummah Kebumen</p>
+            <p>vitae justo eget magna fermentum iaculis eu non diam phasellus</p>
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@
     <link href="{{asset('assets/img/favicon.ico')}}" rel="icon">
     <link href="{{asset('assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
     
-    <title>{{ config('app.name', 'Nurul-Ummah') }}</title>
+    <title>{{ config('app.name', 'Your-Organization') }}</title>
 
     <!-- Bootstrap -->
     <link href="{{asset('vendors/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet">

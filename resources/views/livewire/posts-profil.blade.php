@@ -1,5 +1,5 @@
 @section('title')
-{{__('Profil | Sekilas Nurul Ummah')}}
+{{__('Profil | Sekilas Your Organization')}}
 @endsection
 @section('profil-active')
 {{__('active')}}

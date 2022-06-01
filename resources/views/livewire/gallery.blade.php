@@ -1,5 +1,5 @@
 @section('title')
-{{__('Galeri - PP Nurul Ummah Kebumen')}}
+{{__('Galeri - Your Website')}}
 @endsection
 @section('galeri-active')
 {{__('active')}}
@@ -13,7 +13,7 @@
         <div class="container">
           <div class="breadcrumb-hero">
             <h2>Galeri</h2>
-            <p>Kumpulan foto kegiatan di Pondok Pesantren Nurul Ummah Kebumen</p>
+            <p>vitae justo eget magna fermentum iaculis eu non diam phasellus</p>
           </div>
         </div>
       </div>

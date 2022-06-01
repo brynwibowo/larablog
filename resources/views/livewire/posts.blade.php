@@ -12,7 +12,7 @@
         <div class="container">
           <div class="breadcrumb-hero">
             <h2>{{$judul}}</h2>
-            <p>Pondok Pesantren Nurul Ummah Kebumen</p>
+            <p>Your Website</p>
           </div>
         </div>
       </div>

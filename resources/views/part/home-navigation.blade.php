@@ -2,7 +2,7 @@
     <div class="container d-flex">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="{{route('home')}}"><span>Nurul Ummah</span></a></h1>
+        <h1 class="text-light"><a href="{{route('home')}}"><span>Your Organization</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -13,7 +13,7 @@
 
           <li class="drop-down @yield('profil-active')"><a href="#">Profil</a>
             <ul>
-              <li><a href="{{route('profil')}}">Sekilas Nurul Ummah</a></li>
+              <li><a href="{{route('profil')}}">Sekilas Your Organization</a></li>
               <li><a href="#">Masyayikh</a></li>
               <li><a href="#">Asatidz</a></li>
               <li><a href="#">Mudir</a></li>

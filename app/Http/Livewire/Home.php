@@ -25,8 +25,8 @@ class Home extends Component
             $this->profile_judul = $profil->judul;
             $this->profile_isi = $profil->deskripsi;
         }else{
-            $this->profile_judul = "Pondok Pesantren Nurul Ummah Kebumen";
-            $this->profile_isi = "Selamat datang di website resmi Pondok Pesantren Nurul Ummah Kebumen";
+            $this->profile_judul = "Your Organization";
+            $this->profile_isi = "vitae ultricies leo integer malesuada nunc vel risus commodo viverra";
         }
         
 

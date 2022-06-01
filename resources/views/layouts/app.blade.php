@@ -8,7 +8,7 @@
         <link href="{{asset('assets/img/favicon.ico')}}" rel="icon">
         <link href="{{asset('assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config('app.name', 'Your-Organization') }}</title>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">

@@ -7,8 +7,8 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
   <title>@yield('title')</title>
-  <meta content="Pondok Pesantren Nurul Ummah Kebumen - @yield('title')" name="description">
-  <meta content="Pondok Pesantren Nurul Ummah Kebumen" name="keywords">
+  <meta content="Your-Organization - @yield('title')" name="description">
+  <meta content="Your-Organization" name="keywords">
   <meta name="author" content="Bryn Wibowo" />
 
   <!-- Favicons -->

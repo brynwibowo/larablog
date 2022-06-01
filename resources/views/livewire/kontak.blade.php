@@ -1,5 +1,5 @@
 @section('title')
-{{__('Kontak - PP Nurul Ummah Kebumen')}}
+{{__('Kontak - Your Website')}}
 @endsection
 @section('kontak-active')
 {{__('active')}}
@@ -12,7 +12,7 @@
         <div class="container">
           <div class="breadcrumb-hero">
             <h2>Kontak</h2>
-            <p>Informasi kontak yang bisa dihubungi di Pondok Pesantren Nurul Ummah Kebumen</p>
+            <p>vitae ultricies leo integer malesuada nunc vel risus commodo viverra</p>
           </div>
         </div>
       </div>
@@ -33,7 +33,7 @@
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
               <h3>Alamat Kami</h3>
-              <p>Jl.Kaliputri KM.01 Mangunweni, Kecamatan Ayah, Kabupaten Kebumen, Jawa Tengah 54473</p>
+              <p>Jl.Kenangan Manis, Kabupaten Purbalingga, Jawa Tengah 53371</p>
             </div>
           </div>
 
@@ -58,9 +58,9 @@
         <div class="row">
 
           <div class="col-lg-6 ">
-            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.0522121375825!2d109.41540031438215!3d-7.677536294465225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6537b8a973d0d9%3A0xb4c3dd6621d6c14f!2sPondok%20pesantren%20NURUL%20UMMAH!5e0!3m2!1sid!2sid!4v1631326236598!5m2!1sid!2sid" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.5953612941653!2d109.34806241477571!3d-7.399153694661307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6559b71e297d99%3A0x2751d5ec377568d6!2sPatung%20Jenderal%20Soedirman%20Purbalingga!5e0!3m2!1sid!2sid!4v1654066022467!5m2!1sid!2sid" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
           </div>
-          <!-- form kontak -->
+           <!-- form kontak -->
           <div class="col-lg-6">
             <form wire:submit.prevent="store" role="form" class="php-email-form">
               @csrf

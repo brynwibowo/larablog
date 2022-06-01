@@ -13,7 +13,7 @@
                     </a>
                     <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item"  href="{{ route('profile.show') }}"> Profile</a>
-                      <a class="dropdown-item" target="__blank"  href="https://api.whatsapp.com/send?phone=628978117371&text=Assalamu'alaikum,%20Saya%20dari%20Ponpes%20Nurul%20Ummah%20ingin%20bertanya">
+                      <a class="dropdown-item" target="__blank"  href="https://api.whatsapp.com/send?phone=6289xxxxxx&text=Assalamu'alaikum,%20Saya%20dari%20Your%20Organization%20ingin%20bertanya">
                       <i class="fa fa-wechat pull-right"></i> Bantuan</a>
                      
                     <form id="logout-form" action="{{ route('logout') }}" method="POST">

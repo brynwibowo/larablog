@@ -39,7 +39,7 @@
                   </li>
                   <li><a><i class="fa fa-bank"></i> Profil <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                      <li><a  href="{{route('content-profil')}}">Nurul Ummah</a></li>
+                      <li><a  href="{{route('content-profil')}}">Your-Organization</a></li>
                       <li><a href="{{route('profil-personal')}}">Personal</a></li>
                     </ul>
                 </li>

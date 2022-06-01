@@ -1,5 +1,5 @@
 @section('title')
-{{__('Beranda - PP Nurul Ummah Kebumen')}}
+{{__('Beranda - Your Website')}}
 @endsection
 @section('beranda-active')
 {{__('active')}}
@@ -41,7 +41,7 @@
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animate__animated animate__fadeInDown">Selamat Datang</h2>
-                <p class="animate__animated animate__fadeInUp">Ini adalah website resmi Pondok Pesantren Nurul Ummah Kebumen</p>
+                <p class="animate__animated animate__fadeInUp">sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra</p>
                 <a href="{{route('profil')}}" class="btn-get-started animate__animated animate__fadeInUp">Selengkapnya</a>
               </div>
             </div>
@@ -86,7 +86,7 @@
 
         <div class="section-title" data-aos="fade-up">
         <a href="{{route('berita')}}"><h2>Berita</h2></a>
-          <p>Informasi terbaru Pondok Pesantren Nurul Ummah Kebumen</p>
+          <p>vitae ultricies leo integer malesuada nunc vel risus commodo viverra</p>
         </div>
 
         <div class="row">
@@ -120,7 +120,7 @@
       <div class="container">
       <div class="section-title" data-aos="fade-up">
         <a href="{{route('santri-menulis')}}"><h2>Santri Menulis</h2></a>
-          <p>Karya tulis santri Pondok Pesantren Nurul Ummah Kebumen</p>
+          <p>vitae ultricies leo integer malesuada nunc vel risus commodo viverra</p>
        </div>
 
         <div class="row">

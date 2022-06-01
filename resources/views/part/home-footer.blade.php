@@ -29,10 +29,9 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Kontak Kami</h4>
             <p>
-              Jl. Kaliputri KM.01 Mangunweni<br>
-              Kecamatan Ayah<br>
-              Kabupaten Kebumen<br>
-              Jawa Tengah 54473<br><br>
+              Jl. Kenangan Manis<br>
+              Kabupaten Purbalingga<br>
+              Jawa Tengah 53371<br><br>
               <strong>Phone:</strong> <br>
               <strong>Email:</strong> @gmail.com<br>
             </p>
@@ -40,7 +39,7 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <h3>Nurul Ummah Kebumen di Media Sosial</h3>
+            <h3>Your Organization di Media Sosial</h3>
             <p>Ikuti media sosial kami untuk informasi lebih lanjut</p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -56,7 +55,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; {{date('Y')}} Copyright <strong><span>Ponpes Nurul Ummah</span></strong>. All Rights Reserved
+        &copy; {{date('Y')}} Copyright <strong><span>Your Organization</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
