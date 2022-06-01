@@ -32,3 +32,6 @@ Cara Install :
     ```
     
 10. Jalankan php artisan serve
+
+
+## Demo [disini](https://148.100.77.191)
